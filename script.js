@@ -288,4 +288,33 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('detalle-proyecto-page');
     }
 
+        // ===== RIPPLE EFFECT ON BUTTONS =====
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            // Obtener la posición del clic relativa al botón
+            const rect = button.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            // Crear el elemento ripple
+            let ripple = button.querySelector('.ripple');
+            if (ripple) {
+                ripple.remove(); // Remover ripple anterior si existe
+            }
+            
+            ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            
+            button.appendChild(ripple);
+
+            // Remover el ripple después de la animación
+            ripple.addEventListener('animationend', () => {
+                ripple.remove();
+            });
+        });
+    });
+
 }); // Fin de DOMContentLoaded
