@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvarez Solutions | Inicio Épico</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body data-theme="light">
+
+    <div class="preloader">
+        <div class="preloader-logo"><img src="logo.png" alt="Cargando..."></div>
+        <div class="preloader-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    </div>
+    <div class="custom-cursor"></div> <div class="custom-cursor-dot"></div>
+
+    <header id="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Álvarez Solutions" class="logo-img animated-logo">
+            <span class="logo-text">Álvarez Solutions</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html#inicio" class="nav-link active-link">Inicio</a></li>
+                <li><a href="index.html#acerca" class="nav-link">Sobre Mí</a></li>
+                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i><i class="fas fa-times"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div id="particles-js"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="char">Á</span><span class="char">l</span><span class="char">v</span><span class="char">a</span><span class="char">r</span><span class="char">e</span><span class="char">z</span>
+                    <span class="char"> </span>
+                    <span class="char">S</span><span class="char">o</span><span class="char">l</span><span class="char">u</span><span class="char">t</span><span class="char">i</span><span class="char">o</span><span class="char">n</span><span class="char">s</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="800">Tu software <span class="highlight-text">a tu medida</span>, con tecnología del <span class="highlight-text">futuro</span>.</p>
+                <a href="#acerca" class="btn btn-primary btn-hero" data-aos="fade-up" data-aos-delay="1200">
+                    <span>Explorar Ahora</span> <i class="fas fa-rocket"></i>
+                </a>
+            </div>
+            <a href="#acerca" class="scroll-down-indicator" aria-label="Ir a la siguiente sección">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="acerca" class="seccion acerca-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-accent">Sobre</span> Mí
+                </h2>
+                <div class="acerca-container">
+                    <div class="acerca-img-wrapper" data-aos="fade-right" data-aos-delay="200">
+                        <img src="perfil.JPEG" alt="Foto de Felipe Álvarez" class="acerca-img">
+                        <div class="img-decor-1"></div><div class="img-decor-2"></div>
+                    </div>
+                    <div class="acerca-texto" data-aos="fade-left" data-aos-delay="400">
+                        <h3 class="acerca-greeting">¡Hola! Soy <span class="felipe-highlight">Felipe Álvarez</span></h3>
+                        <p>¡Hola! Soy Felipe, Soy estudiante de Ingeniería en Informática, un <span class="text-emphasis">apasionado por la tecnología</span>, el diseño web y el desarrollo de soluciones digitales a medida. Desde que comencé mi formación, he trabajado en proyectos reales que integran programación, diseño responsivo y gestión de bases de datos, buscando siempre combinar funcionalidad y estética.</p>
+                        <p>Me especializo en crear sitios web <span class="text-emphasis">modernos, eficientes</span> y adaptados a las necesidades específicas de cada cliente. Mi objetivo es ayudar a personas y emprendimientos a dar el salto digital con herramientas <span class="text-emphasis">profesionales, intuitivas y visualmente atractivas</span>.</p>
+                        <p>Con cada proyecto busco <span class="text-emphasis">superarme, aprender algo nuevo</span> y dejar una buena impresión. Si estás buscando una solución digital hecha a medida, estoy listo para trabajar con vos.</p>
+                        <div class="tech-stack-intro" data-aos="fade-up" data-aos-delay="600">
+                            <p>Tecnologías con las que doy vida a tus ideas:</p>
+                            <div class="tech-icons">
+                                <i class="fab fa-html5" title="HTML5"></i> <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js-square" title="JavaScript"></i> <i class="fab fa-php" title="PHP"></i>
+                                <i class="fas fa-database" title="SQL/MySQL"></i>
+                                <i class="fab fa-react" title="React (Aprendiendo)"></i> <i class="fab fa-node-js" title="Node.js (Explorando)"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="proyectos-teaser" class="seccion proyectos-teaser-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                   Mis <span class="title-accent">Creaciones</span> Destacadas
+                </h2>
+                <div class="proyectos-grid" data-aos="fade-up" data-aos-delay="200">
+                    <!-- NUEVOS Proyectos (Enlaces Externos) - AHORA PRIMERO -->
+                   <div class="proyecto-card tilt-effect">
+                        <div class="proyecto-card-inner">
+                           <div class="proyecto-card-front">
+                               <img src="RCP.jpg" alt="Manos que Salvan"> <!-- CAMBIA ESTA IMAGEN -->
+                               <div class="proyecto-card-front-overlay"><h3>Manos que Salvan</h3></div>
+                           </div>
+                           <div class="proyecto-card-back">
+                               <h3>Manos que Salvan</h3>
+                               <p>Página informativa sobre RCP y primeros auxilios, con diseño claro y accesible.</p> <!-- CAMBIA ESTA DESCRIPCIÓN -->
+                               <a href="https://felifran44.github.io/manosquesalvan/" target="_blank" class="btn btn-secondary">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="proyecto-card tilt-effect">
+                        <div class="proyecto-card-inner">
+                           <div class="proyecto-card-front">
+                               <img src="administraciones renom.jpeg" alt="Areainfo v0"> <!-- CAMBIA ESTA IMAGEN -->
+                               <div class="proyecto-card-front-overlay"><h3>Areainfo (Prototipo)</h3></div>
+                           </div>
+                           <div class="proyecto-card-back">
+                               <h3>Areainfo (Prototipo)</h3>
+                               <p>Prototipo funcional para una plataforma de información, desplegado en Vercel.</p> <!-- CAMBIA ESTA DESCRIPCIÓN -->
+                               <a href="https://v0-areainfo.vercel.app/" target="_blank" class="btn btn-secondary">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="proyecto-card tilt-effect">
+                        <div class="proyecto-card-inner">
+                           <div class="proyecto-card-front">
+                               <img src="CDR medios.jpeg" alt="Prueba 2"> <!-- CAMBIA ESTA IMAGEN -->
+                               <div class="proyecto-card-front-overlay"><h3>Diseño Web (Prueba)</h3></div>
+                           </div>
+                           <div class="proyecto-card-back">
+                               <h3>Diseño Web (Prueba)</h3>
+                               <p>Ejercicio de maquetación y diseño web responsivo con enfoque en la estética.</p> <!-- CAMBIA ESTA DESCRIPCIÓN -->
+                               <a href="https://felifran44.github.io/pruba2/" target="_blank" class="btn btn-secondary">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="proyecto-card tilt-effect">
+                        <div class="proyecto-card-inner">
+                           <div class="proyecto-card-front">
+                               <img src="Club nautico montevideo.jpeg" alt="Areainfo Web"> <!-- CAMBIA ESTA IMAGEN -->
+                               <div class="proyecto-card-front-overlay"><h3>Areainfo (Web Completa)</h3></div>
+                           </div>
+                           <div class="proyecto-card-back">
+                               <h3>Areainfo (Web Completa)</h3>
+                               <p>Versión más desarrollada de la plataforma Areainfo, alojada en GitHub Pages.</p> <!-- CAMBIA ESTA DESCRIPCIÓN -->
+                               <a href="https://felifran44.github.io/Areinfoweb/" target="_blank" class="btn btn-secondary">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <a href="proyectos.html" class="btn btn-primary btn-lg">
+                        <span>Ver Todos Mis Proyectos</span> <i class="fas fa-project-diagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion contacto-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    ¿Listo para <span class="title-accent">Despegar</span>?
+                </h2>
+                <p class="contacto-subtitle" data-aos="fade-up" data-aos-delay="100">Contáctame y diseñamos juntos tu próxima gran solución digital. ¡Hagamos historia!</p>
+                
+                <div class="contacto-wrapper">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Información de Contacto</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Maldonado, Uruguay (Disponible para proyectos remotos)</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:felipealvarezpiriz44@gmail.com">felipealvarezpiriz44@gmail.com</a> <!-- CAMBIA ESTO por tu email real --></p>
+                        <p><i class="fas fa-phone"></i> <a href="https://wa.me/59891511615">+598 91 511 615</a></p>
+                        <div class="redes-sociales-contact">
+                            <p>Sígueme la pista:</p>
+                            <div class="iconos-redes">
+                                <a href="https://www.instagram.com/feliialvarezz_/?hl=es-la" target="_blank" aria-label="Instagram de Felipe"><i class="fab fa-instagram"></i></a>
+                                <a href="https://wa.me/59891511615" target="_blank" aria-label="WhatsApp de Felipe"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.linkedin.com/in/felipe-alvarez-piriz-93a893361/" target="_blank" aria-label="LinkedIn de Felipe"><i class="fab fa-linkedin"></i></a>
+                                <!-- Si tienes GitHub, descomenta la siguiente línea y pon tu usuario -->
+                                <a href="https://github.com/FeliFran44" target="_blank" aria-label="GitHub de Felipe"><i class="fab fa-github"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="https://formspree.io/f/manowgqn" method="POST" data-aos="fade-left" data-aos-delay="300">
+                        <div class="form-group">
+                            <input type="text" name="nombre" id="nombre-form" required>
+                            <label for="nombre-form">Tu Nombre Glorioso</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="_replyto" id="email-form" required>
+                            <label for="email-form">Tu Email Intergaláctico</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="mensaje-form" rows="5" required></textarea>
+                            <label for="mensaje-form">Tu Mensaje Épico...</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                           <span>Enviar Misión</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Álvarez Solutions" class="logo-img-footer">
+                    <p>Álvarez Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#acerca">Sobre Mí</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Conéctate</h4>
+                    <div class="iconos-redes">
+                         <a href="https://www.instagram.com/feliialvarezz_/?hl=es-la" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                         <a href="https://wa.me/59891511615" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                         <a href="https://www.linkedin.com/in/felipe-alvarez-piriz-93a893361/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> Álvarez Solutions. Diseñado con <i class="fas fa-heartbeat" style="color: red;"></i> y mucho <i class="fas fa-mug-hot" style="color: #FFD700;"></i> por Felipe Álvarez.</p>
+                <p>Todos los derechos reservados. ¡Construyendo el futuro, hoy!</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="chat-container" data-aos="fade-left" data-aos-offset="0">
+        <button id="toggle-chat-btn" aria-label="Abrir chat">
+            <i class="fas fa-comments"></i>
+            <i class="fas fa-times"></i>
+        </button>
+        <div id="chat-widget">
+            <div id="chat-header"><span>Asistente Virtual</span></div>
+            <div id="chat-box">
+                <div class="chat-message bot">¡Hola! ¿Cómo puedo ayudarte hoy?</div>
+            </div>
+            <div class="input-area">
+              <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+              <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script> 
+    <script src="script.js"></script>
+    <!-- <script src="chatbot.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Épico | Álvarez Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body data-theme="light">
+
+    <div class="preloader">
+        <div class="preloader-logo"><img src="logo.png" alt="Cargando..."></div>
+        <div class="preloader-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+    </div>
+    <div class="custom-cursor"></div> <div class="custom-cursor-dot"></div>
+
+    <header id="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Álvarez Solutions" class="logo-img animated-logo">
+            <span class="logo-text">Álvarez Solutions</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#acerca" class="nav-link">Sobre Mí</a></li>
+                <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                <li><a href="contacto.html" class="nav-link active-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+            </button>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i><i class="fas fa-times"></i>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section id="contacto" class="seccion contacto-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    ¿Listo para <span class="title-accent">Despegar</span>?
+                </h2>
+                <p class="contacto-subtitle" data-aos="fade-up" data-aos-delay="100">Contáctame y diseñamos juntos tu próxima gran solución digital. ¡Hagamos historia!</p>
+                
+                <div class="contacto-wrapper">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                        <h3>Información de Contacto</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Maldonado, Uruguay (Disponible para proyectos remotos)</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:felipealvarezpiriz44@gmail.com">felipealvarezpiriz44@gmail.com</a> <!-- CAMBIA ESTO por tu email real --></p>
+                        <p><i class="fas fa-phone"></i> <a href="https://wa.me/59891511615">+598 91 511 615</a></p>
+                        <div class="redes-sociales-contact">
+                            <p>Sígueme la pista:</p>
+                            <div class="iconos-redes">
+                                <a href="https://www.instagram.com/feliialvarezz_/?hl=es-la" target="_blank" aria-label="Instagram de Felipe"><i class="fab fa-instagram"></i></a>
+                                <a href="https://wa.me/59891511615" target="_blank" aria-label="WhatsApp de Felipe"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.linkedin.com/in/felipe-alvarez-piriz-93a893361/" target="_blank" aria-label="LinkedIn de Felipe"><i class="fab fa-linkedin"></i></a>
+                                <!-- Si tienes GitHub, descomenta la siguiente línea y pon tu usuario -->
+                                <a href="https://github.com/FeliFran44" target="_blank" aria-label="GitHub de Felipe"><i class="fab fa-github"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="https://formspree.io/f/manowgqn" method="POST" data-aos="fade-left" data-aos-delay="300">
+                        <div class="form-group">
+                            <input type="text" name="nombre" id="nombre-contacto" required> <!-- ID único para esta página -->
+                            <label for="nombre-contacto">Tu Nombre Glorioso</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="_replyto" id="email-contacto" required> <!-- ID único para esta página -->
+                            <label for="email-contacto">Tu Email Intergaláctico</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="mensaje-contacto" rows="5" required></textarea> <!-- ID único para esta página -->
+                            <label for="mensaje-contacto">Tu Mensaje Épico...</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                           <span>Enviar Misión</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Álvarez Solutions" class="logo-img-footer">
+                    <p>Álvarez Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#acerca">Sobre Mí</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Conéctate</h4>
+                    <div class="iconos-redes">
+                         <a href="https://www.instagram.com/feliialvarezz_/?hl=es-la" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                         <a href="https://wa.me/59891511615" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                         <a href="https://www.linkedin.com/in/felipe-alvarez-piriz-93a893361/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> Álvarez Solutions. Diseñado con <i class="fas fa-heartbeat" style="color: red;"></i> y mucho <i class="fas fa-mug-hot" style="color: #FFD700;"></i> por Felipe Álvarez.</p>
+                <p>Todos los derechos reservados. ¡Construyendo el futuro, hoy!</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
