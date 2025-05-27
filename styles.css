@@ -1292,3 +1292,113 @@ body[data-theme="dark"] {
     /* Ejemplo: hacer las sombras más sutiles o diferentes en dark mode */
     /* --shadow-color: rgba(255, 255, 255, 0.08); */
 }
+/* ===== EFECTO RIPPLE EN BOTONES ===== */
+.btn {
+    position: relative; /* Ya debería estar, pero por si acaso */
+    overflow: hidden;   /* Clave para el ripple */
+}
+
+.btn .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6); /* Color del ripple, ajústalo si es necesario */
+    transform: scale(0);
+    animation: ripple-animation 0.7s linear;
+    pointer-events: none; /* Para que no interfiera con el clic del botón */
+}
+
+body[data-theme="dark"] .btn .ripple {
+    background-color: rgba(255, 255, 255, 0.3); /* Ripple un poco más sutil en dark mode */
+}
+
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+/* ===== SECCIÓN DE SERVICIOS ===== */
+.servicios-section {
+    background-color: var(--bg-secondary); /* O el color de fondo que prefieras */
+}
+
+.section-subtitle { /* Estilo para el subtítulo de la sección */
+    text-align: center;
+    max-width: 700px;
+    margin: -40px auto 50px; /* Ajusta según el espacio con el título */
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.servicio-card {
+    background-color: var(--bg-primary); /* Un color ligeramente diferente para la tarjeta */
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px var(--shadow-color);
+    transition: transform var(--transition-speed-normal) ease-out, box-shadow var(--transition-speed-normal) ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicio-card::before { /* Elemento decorativo sutil */
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent-color);
+    opacity: 0.05;
+    border-radius: 50%;
+    transition: transform var(--transition-speed-slow) ease-in-out;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px var(--shadow-color-dark); /* Sombra más pronunciada */
+}
+.servicio-card:hover::before {
+    transform: scale(1.5) translate(20px, 20px);
+}
+
+.servicio-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--bg-secondary);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 55px; /* Ajusta para centrar el icono verticalmente si es necesario */
+    box-shadow: 0 0 15px var(--shadow-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.servicio-card:hover .servicio-icon {
+    transform: rotateY(360deg) scale(1.1);
+    color: var(--special-accent);
+}
+
+.servicio-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.servicio-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
